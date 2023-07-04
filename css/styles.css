@@ -254,7 +254,16 @@ button {
   | About styles
   |============================
 */
-
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  background-color: #ff3839;
+}
 .about-section {
   padding: 112px 0;
 }
@@ -744,6 +753,11 @@ button {
   color: var(--color-main-red);
 }
 
+.modal-contact-title {
+  font-size: 28px;
+  
+}
+
 .contact-desc {
   color: var(--color-light-black);
   text-align: justify;
@@ -1013,8 +1027,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  min-height: 584px;
+  width: 508px;
+  min-height: 684px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1022,11 +1036,11 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
   }
-}
+} */
 
 .modal-btn {
   position: absolute;
@@ -1235,5 +1249,5 @@ button {
 
 .modal-buttom:is(:focus, :hover) {
   background-color: var(--color-main-red);
-  color: var(--background-main);
+  color: var(--background-main);}
   
